@@ -5,68 +5,52 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cagirdem <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/09 12:01:02 by cagirdem          #+#    #+#             */
-/*   Updated: 2022/02/09 20:05:16 by cagirdem         ###   ########.tr       */
+/*   Created: 2022/02/21 19:59:40 by cagirdem          #+#    #+#             */
+/*   Updated: 2022/02/21 20:42:09 by cagirdem         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	PUSH_SWAP_H
+#ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include <unistd.h>
 # include <stdlib.h>
-# include <ctype.h>
+# include <unistd.h>
+# include "libft/libft.h"
 
-
-/*
- *	Linked list defination part
- */
-
-typedef struct s_node {
-	int		value;
-	struct	s_node *next;
-}	t_node;
-
-/*
- *	Stack defination part
- */
-
-typedef struct	s_stack {
-	struct s_node	*top;
+typedef struct stack
+{
+	int		*arr;
+	int		size;
+	char	type;
+	int		max_size;
 }	t_stack;
 
-/*
- * main assistance definations
- */
-int		isInt(char *str);
-int		ft_isdigit(int c);
-int		ft_atoi(char *str);
-int		*get_stack(struct s_stack *stack);
-void	print_stack(struct s_stack *stack_a, struct s_stack *stack_b);
-int		stack_counter(struct s_stack *stack);
+void	short_sort(t_stack *a, t_stack *b);
+int		get_min_ind(t_stack *a);
+int		get_pos(t_stack *a, int num);
+int		mid(t_stack *s, int length);
+void	get_to_top(t_stack *s, int i);
+void	find_least_process(t_stack *a, t_stack *b, int *i, int *j);
+void	push(t_stack *from, t_stack *to, int checker);
+void	rotate(t_stack *s, int checker);
+void	rev_rotate(t_stack *s, int checker);
+void	swap(t_stack *s, int checker);
+void	init_stack(t_stack *stack, int size, char type);
+void	init_a(t_stack *from, t_stack *to, int chunk_size);
+void	simplify(int *arr, int size);
+void	sort(int *arr, int size);
+int		check_nums(int argc, char **args, int checker);
+int		sorted(t_stack *a);
+void	rec(t_stack *a, t_stack *b);
+int		err(int checker);
+int		is_valid(char *str);
+int		do_process(char *call, t_stack *a, t_stack *b);
+void	ft_putnbr(int num);
+int		ft_strcmp(char *s1, char *s2);
+int		check_nums_2(int argc, char **args, int checker);
 
-/*
- * struct utils definations
- */
-
-struct s_stack 	*init(void);
-int				isEmpty(struct s_stack *stack);
-void			push(struct s_stack *stack, int content);
-int				pop(struct s_stack *stack);
-
-/*
- * push_swap commands
- */
-void	sa(t_stack *stack);
-void	sb(t_stack *stack);
-void	ss(t_stack *stack_1, t_stack *stack2);
-void	pa(t_stack *stack_1, t_stack *stack2);
-void	pb(t_stack *stack_1, t_stack *stack2);
-void	ra(t_stack *stack);
-void	rb(t_stack *stack);
-void	rr(t_stack *a, t_stack *b);
-void	rra(t_stack *stack);
-void	rrb(t_stack *stack);
-void	rrr(t_stack *a, t_stack*b);
-
+# define SUCCESS 0
+# define ERROR 1
+# define INT_MIN -2147483648
+# define INT_MAX 2147483647
 #endif

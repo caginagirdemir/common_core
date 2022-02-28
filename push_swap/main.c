@@ -5,50 +5,88 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cagirdem <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/09 11:58:32 by cagirdem          #+#    #+#             */
-/*   Updated: 2022/02/09 20:20:29 by cagirdem         ###   ########.tr       */
+/*   Created: 2022/02/21 11:29:09 by cagirdem          #+#    #+#             */
+/*   Updated: 2022/02/21 21:08:59 by cagirdem         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
-int	main(int argc, char **argv)
+int	free_func(t_stack *a, t_stack *b)
 {
-	struct s_stack	*a;
-	struct s_stack	*b;
+	if (a)
+		free(a->arr);
+	if (b)
+		free(b->arr);
+	return (SUCCESS);
+}
 
-	a = init();
-	b = init();
-	if (argc >= 2)
+int	take_args_multiple(int argc, char **argv, t_stack *st_a, t_stack *st_b)
+{
+	int	i;
+
+	i = argc;
+	if (check_nums(argc, argv, 0) == ERROR)
+		return (ERROR);
+	init_stack(st_a, argc - 1, 'a');
+	init_stack(st_b, argc - 1, 'b');
+	i = -1;
+	while (++i < argc - 1)
+		st_a->arr[argc - 2 - i] = ft_atoi(argv[i + 1]);
+	return (i);
+}
+
+int	take_args(int argc, char **argv, t_stack *stack_a, t_stack *stack_b)
+{
+	int		i;
+	int		counter;
+	char	**ret_val;
+
+	ret_val = ft_split(argv[1], ' ');
+	i = ft_wdcounter(argv[1], ' ');
+	if (i == 1)
 	{
-		int	i;
-
-		i = argc - 1;
-		while (argv[i] && i != 0)
-		{
-			if (isInt(argv[i]) == 1)
-			{
-				write(1,"error\n",6);
-				exit(0);
-			}
-			push(a, ft_atoi(argv[i]));
-			i--;
-		}
+		if (take_args_multiple(argc, argv, stack_a, stack_b) == ERROR)
+			return (ERROR);
+		return (SUCCESS);
 	}
-	//push(b, 5);
-	//push(b, 6);
-	sa(a);
-	pb(a,b);
-	pb(a,b);
-	pb(a,b);
-	rr(a,b);
-	rrr(a,b);
-	sa(a);
-	pa(a,b);
-	pa(a,b);
-	pa(a,b);
-	print_stack(a,b);
-	//print_stack(a,b);
-	return (0);
+	if (check_nums_2(i, ret_val, 0) == ERROR)
+		return (ERROR);
+	init_stack(stack_a, i, 'a');
+	init_stack(stack_b, i, 'b');
+	counter = -1;
+	while (counter < i && counter + 1 != i)
+	{
+		counter ++;
+		stack_a->arr[i - 1 - counter] = ft_atoi(ret_val[counter]);
+	}
+	return (i);
+}
+
+int	main(int argc, char **args)
+{
+	t_stack	a;
+	t_stack	b;
+	int		i;
+
+	i = argc;
+	if (argc == 2)
+	{		
+		if (take_args(argc, args, &a, &b) == ERROR)
+			return (-1);
+	}
+	else
+		if (take_args_multiple(argc, args, &a, &b) == ERROR)
+			return (-1);
+	if (sorted(&a))
+		return (free_func(&a, &b));
+	simplify(a.arr, a.size);
+	if (a.size <= 5)
+		short_sort(&a, &b);
+	else
+	{
+		init_a(&a, &b, a.size);
+		rec(&a, &b);
+	}
+	return (free_func(&a, &b));
 }
