@@ -8,7 +8,7 @@ All program wrintten in C.
   
   >**ft_printf:** Handmade printf function defined by Standard C Library
   
-  >**minitalk:** Communicate with two programs through signals
+  >**minitalk:** Communication with two programs each others through signals
   
   >**fdf:** Draw different patterns with minilibX library. Firstly should to make libft and minilibx.
   
