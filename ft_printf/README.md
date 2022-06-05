@@ -11,5 +11,5 @@
 | Libft authorized | Yes |
 | Description | Write a library that contains ft_printf(), a function that will mimic the original printf() |
 
-<pre><code>This is a code block.
-</code></pre>
+<code>This is a code block.
+</code>
