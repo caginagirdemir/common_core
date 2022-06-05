@@ -11,6 +11,8 @@
 | Libft authorized | Yes |
 | Description | Write a library that contains ft_printf(), a function that will mimic the original printf() |
 
+**Project Instructions**
+
 You have to recode the printf() function from libc.
 
 The prototype of ft_printf() is:
