@@ -1,6 +1,6 @@
 # minitalk project
 
-** Project Instructions **
+**Project Instructions**
 
 You must create a communication program in the form of a **client** and a **server**.
 
