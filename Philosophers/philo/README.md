@@ -3,7 +3,7 @@
 **Global Rules**
 
 - Global variables are forbidden!
-- Your(s) program(s) should take the following arguments: <br/>  	`number_of_philosophers` `time_to_die` `time_to_eat` `time_to_sleep `  `\[number_of_times_each_philosopher_must_eat \] `
+- Your(s) program(s) should take the following arguments: <br/>  	`number_of_philosophers` `time_to_die` `time_to_eat` `time_to_sleep `    `\[number_of_times_each_philosopher_must_eat \] `
   - number_of_philosophers: The number of philosophers and also the number of forks.
   - time_to_die (in miliseconds): If a philosopher didn't start eating time_to_die miliseconds since the beginning of their last meal or the beginning of the simulation, they die.
   - time_to_eat (in milliseconds): The time it takes for a philosopher to eat. During that time, they will need to hold two forks.
@@ -25,3 +25,19 @@ About the logs of your program:
 - Again, philosophers should avoid dying!
 
 **Project Instructions**
+
+| Specs  | Explanation |
+| ------------- | ------------- |
+| Program name | philo |
+| Turn in files | Makefile, \*.h, \*c, in directory philo/ |
+| Makefile | NAME, all, clean, fclean, re |
+| Arguments | number_of_philosophers time_to_die time_to_eat time_to_sleep \[number_of_times_each_philosopher_must_eat \] |
+| External functs. | memset, printf, malloc, free, write, <br/> usleep, gettimeofday, pthread_create, <br/> pthread_detach, pthread_join, pthread_mutex_init, <br/> pthread_mutex_destroy, pthread_mutex_lock, <br/> pthread_mutex_unlock |
+| Libft authorized | No |
+| Description | Philosophers with threads and mutexes |
+
+The specific rules for the mandatory part are:
+- Each philosopher should be a thread.
+- There is one fork between each pair of philosophers. Therefore, if there are severa philosophers, each philosophers has a fork on their left side and a fork on their right side. If there is only one philosopher, there should be only one fork on the table.
+- To prevent philosophers from duplication forks, you should protect the forks state with a mutex for each of them.
+- 
