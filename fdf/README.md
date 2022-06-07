@@ -1,3 +1,3 @@
 # FdF
 
-<img src="FdF.png" width="200" height="250" />
+<img src="FdF.png" width="250" height="200" />
