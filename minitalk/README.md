@@ -1,6 +1,6 @@
 # minitalk project
 
-**Project Objectives** : to communicate between two program through signals. to understand bit-shifting, logical operations, kill funcs, signal redirects, signals in linux. Also I wrote a [article](https://medium.com/@cagina/cde-sinyaller-d63297fdc216) in Turkish on Medium.
+**Project Objectives** : to communicate between two program through signals. to understand bit-shifting, logical operations, kill funcs, signal redirects, signals in linux. Also I wrote a [article](https://medium.com/@cagina/cde-sinyaller-d63297fdc216) about signals in Turkish on Medium.
 
 <details>
   <summary>Project Instructions</summary>
