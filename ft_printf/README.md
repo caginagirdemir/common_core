@@ -18,8 +18,9 @@
   
     The prototype of ft_printf() is:
   
-    <pre><code>int  ft_printf(const char *, ...);
-    </code></pre>
+    ```
+    int  ft_printf(const char *, ...);
+    ```
   
     Here are the requirements:
     - Don't implement the buffer management of the original printf().
