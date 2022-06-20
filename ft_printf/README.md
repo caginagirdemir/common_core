@@ -1,7 +1,5 @@
 # ft_printf project
 
-# Get_Next_Line
-
 | Specs  | Explanation |
 | ------------- | ------------- |
 | Program name | libftprintf.a |
