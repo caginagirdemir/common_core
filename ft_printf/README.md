@@ -13,16 +13,15 @@
 
 <details>
   <summary>Project Instructions</summary>
-
+  
     You have to recode the printf() function from libc.
-
+  
     The prototype of ft_printf() is:
-
+  
     <pre><code>int  ft_printf(const char *, ...);
     </code></pre>
-
+  
     Here are the requirements:
-
     - Don't implement the buffer management of the original printf().
     - Your function has to handle the following conversions: cspdiuxX%
     - Your function will be compared against the original printf().
