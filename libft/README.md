@@ -1,6 +1,6 @@
 # Libft functions
 
-## string.h
+## from string.h
 
 | Function  | Explanation |
 | ------------- | ------------- |
