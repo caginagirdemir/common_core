@@ -8,6 +8,7 @@ Compile with
 gcc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
 ```
 
+<img src="screenshot.png" />
 
 <details>
 <summary> Project Instructions </summary>
