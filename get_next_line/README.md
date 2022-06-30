@@ -2,6 +2,13 @@
 
 This function return a line read from a file descriptor. 
 
+Compile with 
+
+```
+gcc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
+```
+
+
 | Specs  | Explanation |
 | ------------- | ------------- |
 | Prototype  | char *get_next_line(int fd); |
