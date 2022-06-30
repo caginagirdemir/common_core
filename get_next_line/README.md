@@ -1,6 +1,6 @@
 # Get Next Line
 
-This function return a line read from a file descriptor.
+This function return a line read from a file descriptor. 
 
 | Specs  | Explanation |
 | ------------- | ------------- |
