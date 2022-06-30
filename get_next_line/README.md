@@ -9,6 +9,9 @@
 | External functs.  |  read, malloc, free |
 | Description  |  Write a function that returns a line read from a file descriptor |
 
+<details>
+<summary> Project Instructions </summary>
+
 **Project Instructions**
 
 - Repeated calls (e.g., using a loop) to your get_next_line() function should let you read the text file pointed to by the file descriptor, **one line at a time**.
@@ -35,3 +38,4 @@
 - Develop get_next_line() using only one static variable.
 - Your get_next_line() can manage multiple file descriptors at the same time.
   
+</details>
