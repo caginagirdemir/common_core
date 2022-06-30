@@ -31,6 +31,7 @@
 
 <details>
 <summary> from stdlib.h </summary>
+  
 ## from stdlib.h
   
 | Function  | Explanation |
@@ -41,6 +42,7 @@
 
 <details>
 <summary> Other Functions </summary>
+  
 ## Other Functions
   
 | Function  | Explanation |
@@ -53,10 +55,18 @@
 
 <details>
 <summary> Linked List Functions </summary>
+  
 ## Linked List Functions
   
 | Function  | Explanation |
 | ------------- | ------------- |
 | ft_lstnew | creates a new linked list |
+| ft_lstsize | turns linked list size |
+| ft_lstlast | turns last linked list element |
+| ft_lstiter | iterates all linked list elements and applies specified a function to every elements |
+| ft_lstdelone | deletes a linked list element | 
+| ft_lstclear | deletes all linked list elements | 
+| ft_lstadd_front | adds a element at front of the linked list | 
+| ft_lstadd_back | adds a element at back of the linked list |
   
 </details>
