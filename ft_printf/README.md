@@ -1,12 +1,19 @@
 # ft_printf 
 
 %s string
+
 %c char
+
 %p address
+
 %d decimal
+
 %i integer
+
 %x hexdecimal lowercase
+
 %X hexdecimal uppercase 
+
 %% % character
 
 from va_arg.h library
