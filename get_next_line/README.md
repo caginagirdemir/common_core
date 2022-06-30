@@ -9,6 +9,9 @@ gcc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
 ```
 
 
+<details>
+<summary> Project Instructions </summary>
+  
 | Specs  | Explanation |
 | ------------- | ------------- |
 | Prototype  | char *get_next_line(int fd); |
@@ -17,9 +20,6 @@ gcc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
 | Return value  |  **Read line** : correct behavior <br /> **NULL** : there is nothing else to read, or an error occured |
 | External functs.  |  read, malloc, free |
 | Description  |  Write a function that returns a line read from a file descriptor |
-
-<details>
-<summary> Project Instructions </summary>
 
 **Project Instructions**
 
