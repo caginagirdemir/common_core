@@ -2,8 +2,7 @@
 
 **Project Objectives** : to communicate between two program through signals. to understand bit-shifting, logical operations, kill funcs, signal redirects, and signals in linux. to learn signal func and sigaction func. Also I wrote a [article](https://medium.com/@cagina/cde-sinyaller-d63297fdc216) about signals in Turkish on Medium.
 
-<details>
-  <summary>Project Instructions</summary>
+**Project Instructions**
 
   You must create a communication program in the form of a **client** and a **server**.
 
@@ -16,4 +15,4 @@
   - Your server should be able to receive strings from several clients in a row without needing to restart.
   - The communication between your client and your server has to be done only using UNIX signals.
   - You can only use these two signals: **SIGUSR1** and **SIGUSR2**.
-</details>
+
