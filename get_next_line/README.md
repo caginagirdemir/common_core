@@ -10,8 +10,7 @@ gcc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
 
 <img src="screenshot.png" />
 
-<details>
-<summary> Project Instructions </summary>
+Project Instructions 
   
 | Specs  | Explanation |
 | ------------- | ------------- |
@@ -48,4 +47,3 @@ gcc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
 - Develop get_next_line() using only one static variable.
 - Your get_next_line() can manage multiple file descriptors at the same time.
   
-</details>
