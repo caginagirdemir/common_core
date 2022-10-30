@@ -1,6 +1,4 @@
-# libft
-
-<img src="./img.png" />
+# part of Common Core 
 
 All program wrintten in C.
 
