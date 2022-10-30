@@ -1,5 +1,6 @@
 # Libft functions
 
+<img src="./img.png" />
 
 <details>
 <summary>from string.h</summary>
