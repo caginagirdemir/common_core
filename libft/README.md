@@ -1,5 +1,5 @@
 # Libft functions 
-[![My Skills](https://skills.thijs.gg/icons?i=c,cpp)]()
+[![My Skills](https://skills.thijs.gg/icons?i=c)]()
 
 
 <img src="./img.png" />
