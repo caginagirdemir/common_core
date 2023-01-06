@@ -1,6 +1,8 @@
 # Libft functions 
 [![My Skills](https://skills.thijs.gg/icons?i=c)]()
 
+<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/youtube.svg" width="50" height="50">
+
 <img src="./img.png" />
 
 
