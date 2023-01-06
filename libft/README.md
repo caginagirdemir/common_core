@@ -1,8 +1,6 @@
 # Libft functions 
 [![My Skills](https://skills.thijs.gg/icons?i=c)]()
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-
 
 <img src="./img.png" />
 
