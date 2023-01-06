@@ -1,8 +1,9 @@
-# Libft functions
+# Libft functions 
+[![My Skills](https://skills.thijs.gg/icons?i=c)]()
 
 <img src="./img.png" />
 
-[![My Skills](https://skills.thijs.gg/icons?i=c)]()
+
 
 <details>
 <summary>from string.h</summary>
