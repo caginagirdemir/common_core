@@ -2,7 +2,7 @@
 
 <img src="./img.png" />
 
-[![My Skills](https://skills.thijs.gg/icons?i=C)]()
+[![My Skills](https://skills.thijs.gg/icons?i=c)]()
 
 <details>
 <summary>from string.h</summary>
