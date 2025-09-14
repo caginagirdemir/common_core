@@ -2,9 +2,9 @@
 
 All program wrintten in C. 
 
-  >**libft:** Handmade C Standard Library [Detail](https://github.com/caginagirdemir/common_core/blob/master/libft/README.md)
+  >**libft:** Handmade C Standard Library [Detail](https://github.com/caginagirdemir/common_core/blob/master/libft)
   
-  >**get_next_line:** It turns text line by line from the specified files 
+  >**get_next_line:** It turns text line by line from the specified files [Detail](https://github.com/caginagirdemir/common_core/tree/master/get_next_line)
   
   >**ft_printf:** Handmade printf function defined by Standard C Library
   
