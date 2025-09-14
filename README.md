@@ -1,8 +1,8 @@
 # part of Common Core 
 
-All program wrintten in C.
+All program wrintten in C. 
 
-  >**libft:** Handmade C Standard Library
+  >**libft:** Handmade C Standard Library [Detail](https://github.com/caginagirdemir/common_core/blob/master/libft/README.md)
   
   >**get_next_line:** It turns text line by line from the specified files 
   
