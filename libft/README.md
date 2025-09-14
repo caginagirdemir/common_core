@@ -1,8 +1,7 @@
 # Libft functions 
-[![My Skills](https://skills.thijs.gg/icons?i=c)]()
 
 
-
+<img src="img.png">
 
 
 <details>
